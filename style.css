@@ -239,3 +239,61 @@ design-selection ul, .zen-resources ul {
     rgba(255,255,255,0) 100%)
   ; /* W3C */
 }
+.design-selection li:nth-child(2n+1), .zen-resources li:nth-child(2n+1) {
+  clear: left;
+}
+.design-selection .design-name, .zen-resources a, li.viewall a {
+  display: block;
+  margin-bottom: 0.25em;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.2em;
+  font-style: normal;
+  text-transform: uppercase;
+}
+/* select a design */
+.design-selection h3 {
+  display: none;
+}
+.design-selection .designer-name {
+  color: #616857;
+  font-size: 0.9em;
+  font-style: normal;
+}
+/* archives navigation */
+.design-archives {
+  position: absolute;
+  top: 160px;
+  right: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(255,255,255,0.2);
+}
+.design-archives h3 {
+  display: none;
+}
+.design-archives ul {
+  margin: 0;
+}
+.design-archives li {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+  list-style: none;
+}
+.design-archives li.viewall {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 71px;
+  line-height: 50px;
+}
+.previous, .next {
+  left: 0;
+  z-index: 3;
+}
+.next {
+  left: auto;
+  right: 0;
+}
